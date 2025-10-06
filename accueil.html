@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil - Webcourses</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="accueil.html" class="logo">WEBCOURSES</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher une formation...">
+            <span class="search-icon">🔍</span>
+        </div>
+        <a href="login.html" class="login">LOG IN</a>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section id="menu-accueil" class="menu-accueil">
+            <div class="presentation">
+                <h1>BIENVENUE SUR WEBCOURSES !</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>NOS DIFFÉRENTES FORMATIONS :</h2>
+            </div>
+
+            <div class="formations">
+                <a href="html_hub.html" class="language-card" target="_blank">HTML</a>
+                <a href="cours_js.html" class="language-card" target="_blank">JS</a>
+                <a href="cours_python.html" class="language-card" target="_blank">PYTHON</a>
+                <a href="cours_linux.html" class="language-card" target="_blank">LINUX</a>
+                <a href="cours_ia.html" class="language-card" target="_blank">IA</a>
+                <a href="cours_java.html" class="language-card" target="_blank">JAVA</a>
+            </div>
+        </section>
+    </main>
+    <!-- Fenêtre flottante Mises à jour des cours -->
+    <div class="update-section" id="updateSection">
+        <button class="close-btn" onclick="document.getElementById('updateSection').style.display='none'">×</button>
+        <h3>Mises à jour des cours</h3>
+        <ul>
+            <li><a href="html_hub.html">Ajout du cours "CSS Avancé"</a></li>
+            <li>Mise à jour du cours "JavaScript Moderne"</li>
+            <li>Nouveau tutoriel "Node.js pour débutants"</li>
+        </ul>
+    </div>
+    <!-- Footer -->
+    <footer class="webcourses-footer">
+        <p>© 2025 Webcourses - Tous droits réservés</p>
+        <a href="mentions_legales.html">Mentions légales</a>
+        <a href="politique_de_confidentialité.html">Politique de confidentialité</a>
+    </footer>
+
+
+
+</body>
+</html>

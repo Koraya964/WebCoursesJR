@@ -1,0 +1,380 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* force la hauteur de la fenêtre */
+}
+
+main {
+    flex: 1; /* prend tout l'espace restant entre header et footer */
+}
+
+/* Footer normal en bas */
+footer,
+.webcourses-footer,
+.landing-footer {
+    background-color: #ccc;
+    color: #000;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.4);
+}
+footer a,
+.webcourses-footer a,
+.footer-links {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover, .update-section a:hover {
+    color: #0077cc;
+}
+/* Container central  du hub html*/
+.course-hub {
+    max-width: 1000px;
+    margin: 100px auto 60px auto;
+    padding: 30px;
+    background: #ccc;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    color: #0f172a;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.course-hub h1 {
+    text-align: center;
+    color: #0ea5e9;
+    margin-bottom: 30px;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.course-card {
+    background: #e2e8f0;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.course-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.course-card a {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #0f172a;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card a:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 14px rgba(14, 165, 233, 0.4);
+}
+/* Container central login */
+.login-container {
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 40px 30px;
+    background: #ccc;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    color: #0f172a;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #0ea5e9;
+    margin-bottom: 25px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Inputs */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 10px 15px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background: #fff;
+    color: #0f172a;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+.login-container input:focus {
+    border-color: #0ea5e9;
+    outline: none;
+}
+
+/* Bouton login */
+.login-container button {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #0f172a;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.login-container button:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 14px rgba(14, 165, 233, 0.4);
+}
+
+/* Lien secondaire */
+.login-container .forgot-password {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #0f172a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login-container .forgot-password:hover {
+    color: #0077cc;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .login-container {
+        margin: 80px 20px;
+        padding: 30px 20px;
+    }
+}
+/* Header */
+header,
+.landing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+header .logo,
+.landing-header .logo img {
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+.search-bar {
+    position: relative;
+    flex-grow: 1;
+    margin: 0 20px;
+    max-width: 50%;
+}
+
+.search-bar input[type="text"] {
+    /* espace à droite pour la loupe */
+    border: 1px solid #334155;
+    border-radius: 6px;
+    background: #fff;
+    color: #000;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    color: #0f172a;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.search-bar .search-icon:hover {
+    transform: translateY(-50%) scale(1.15);
+}
+
+header input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #000000;
+}
+
+header .login,
+.login-btn {
+    background-color: #0ea5e9;
+    color: #0f172a;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+header .login:hover,
+.login-btn:hover {
+    background-color: #025f8aaa;
+}
+
+.menu-accueil {
+    min-height: calc(100vh - 100px); /* header + footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Grille 2 colonnes × 3 lignes */
+.formations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colonnes */
+    grid-template-rows: repeat(3, auto);
+    /* 3 lignes */
+    gap: 25px;
+
+    /* ✅ centrage parfait de la grille dans menu-accueil */
+    justify-content: center;
+    /* centre la grille horizontalement */
+    align-content: center;
+    /* centre verticalement le contenu de la grille */
+
+    width: fit-content;
+    /* la grille prend juste la place de ses cartes */
+    margin: 0 auto;
+    /* renforce le centrage horizontal */
+}
+
+
+.language-card {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #94a3b8;
+    color: #0f172a;
+    padding: 25px 30px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+    text-align: center;
+}
+
+/* Garde la même couleur sur tous les états */
+.language-card:link,
+.language-card:visited,
+.language-card:hover,
+.language-card:active,
+.language-card:focus .update-section:link,
+.update-section:visited,
+.update-section:active,
+.update-section:focus,
+.update-section a {
+    color: #0f172a;
+    text-decoration: none;
+}
+
+/* Animation hover */
+.language-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(37, 38, 38, 0.5);
+    cursor: pointer;
+}
+
+.update-section {
+    position: absolute;
+    /* pas fixed */
+    bottom: 20px;
+    /* distance depuis le bas du conteneur parent */
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: #ccc;
+    color: #000000;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    overflow-y: auto;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.update-section h3 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.update-section ul {
+    list-style: disc inside;
+    padding-left: 10px;
+}
+
+.update-section li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Optionnel : bouton fermer */
+.update-section .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.menu-accueil {
+    background: #ccc;
+    color: #000;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+}

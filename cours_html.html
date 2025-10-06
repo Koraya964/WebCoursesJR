@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cours HTML - Webcourses</title>
+    
+</head>
+
+<body class="bg-webcourses">
+
+    <!-- Header -->
+    <header>
+        <a href="accueil.html" class="logo">WEBCOURSES</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher une formation...">
+            <span class="search-icon">🔍</span>
+        </div>
+        <a href="login.html" class="login">LOG IN</a>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section class="course-container">
+            <div class="course-layout">
+                <!-- Sommaire à gauche -->
+                <aside class="course-sidebar">
+                    <h3>Sommaire</h3>
+                    <a href="#intro">Introduction</a>
+                    <a href="#structure">Structure HTML</a>
+                    <a href="#texte">Texte et paragraphes</a>
+                    <a href="#liens">Liens et images</a>
+                    <a href="#formulaires">Formulaires</a>
+                </aside>
+
+                <!-- Contenu du cours -->
+                <div class="course-main">
+                    <h1>Cours HTML</h1>
+
+                    <h2 id="intro">Introduction</h2>
+                    <p>HTML (HyperText Markup Language) est le langage de base pour créer des pages web. Il permet de
+                        structurer le contenu et d’ajouter des éléments multimédia.</p>
+
+                    <h2 id="structure">Structure HTML</h2>
+                    <p>Une page HTML commence toujours par une déclaration de type et une structure minimale :</p>
+                    <div class="code-example">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="fr"&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title>Ma page&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Bonjour le monde&lt;/h1&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+                    </div>
+
+                    <h2 id="texte">Texte et paragraphes</h2>
+                    <ul>
+                        <li>Les balises &lt;h1&gt; à &lt;h6&gt; pour les titres</li>
+                        <li>La balise &lt;p&gt; pour les paragraphes</li>
+                        <li>La balise &lt;br&gt; pour les sauts de ligne</li>
+                    </ul>
+
+                    <h2 id="liens">Liens et images</h2>
+                    <ul>
+                        <li>Balise &lt;a href="..."&gt; pour les liens</li>
+                        <li>Balise &lt;img src="..." alt="..."&gt; pour insérer des images</li>
+                    </ul>
+
+                    <h2 id="formulaires">Formulaires</h2>
+                    <p>Les formulaires permettent de récupérer des données utilisateur :</p>
+                    <div class="code-example">
+&lt;form action="#" method="post"&gt;<br>
+&nbsp;&nbsp;&lt;label&gt;Nom : &lt;/label&gt;<br>
+&nbsp;&nbsp;&lt;input type="text" name="nom"&gt;<br>
+&nbsp;&nbsp;&lt;input type="submit" value="Envoyer"&gt;<br>
+&lt;/form&gt;
+                    </div>
+
+                    <div class="course-buttons">
+                        <a href="accueil.html">← Retour à l’accueil</a>
+                        <a href="cours_js.html">Suivant : JavaScript →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="webcourses-footer">
+        <p>© 2025 Webcourses - Tous droits réservés</p>
+        <a href="mentions_legales.html">Mentions légales</a>
+        <a href="politique_de_confidentialité.html">Politique de confidentialité</a>
+    </footer>
+
+</body>
+
+</html>
